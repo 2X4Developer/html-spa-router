@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <main>
+        <div class="sidebar">
+            <div class="side-content">
+                <a href="/" data-route>Your tracks</a>
+                <a href="/tes2" data-route>Settings</a>
+            </div>
+        </div>
+        <div class="page">
+            <div class="container" id="contain"></div>
+        </div>
+    </main>
+    <div class="media-controls">
+        <div class="columns is-mobile">
+            <div class="column is-one-fifth" style="height: 6rem;width:6rem;">
+                <img src="https://placehold.co/500x500" class="img-fluid">
+            </div>
+            <div class="column is-one-fifth" style="width:max-content">
+                <a href="#" class="title is-5">Song Name</a>
+                <br>
+                <a href="#" class="subtitle is-6">Artist</a>
+            </div>
+            <div class="column has-text-centered">
+                <button class="button is-info is-small">Back</button>
+                <button class="button is-info is-small">Play</button>
+                <button class="button is-info is-small">Next</button>
+                <br>
+                <input type="range" class="music-progress" min="0" max="100" value="90" step="0.01" />
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/router.js"></script>
+</html>

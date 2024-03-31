@@ -1,0 +1,57 @@
+:root{
+    --radius: 0.75rem;
+}
+.box{
+    box-shadow: none;
+}
+main{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+.sidebar{
+    flex: 0 0 auto;
+    width: 15rem;
+    background-color: var(--bulma-scheme-main);
+}
+.page{
+    flex: 1 0 0;
+}
+body, html{
+    background-color: hsl(221deg 12.96% 6.4%);
+}
+.side-content{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.side-content > a{
+    flex: 1 0 0;
+    padding: 0.6rem;
+    margin: 3px;
+    color: white;
+    border-radius: var(--radius);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.side-content > a:hover{
+    background-color: rgb(255 255 255 / 5%);
+}
+.media-controls{
+    position: fixed;
+    background-color: var(--bulma-scheme-main);
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 6rem;
+    
+}
+
+.media-controls > .columns{
+    margin: 0!important;
+    align-items: center;
+}
+
+.music-progress{
+    width: 40rem;
+}

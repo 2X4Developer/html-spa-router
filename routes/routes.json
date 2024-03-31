@@ -1,0 +1,12 @@
+{
+    "routes" :[
+        {
+            "url": "/",
+            "file": "index"
+        },
+        {
+            "url": "/tes2",
+            "file": "test2"
+        }
+    ]
+}
